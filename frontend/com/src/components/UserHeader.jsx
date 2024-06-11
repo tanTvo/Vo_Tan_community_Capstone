@@ -40,7 +40,10 @@ const UserHeader = () => {
         <Avatar
             name="Tan"
             src= "/tan-avatar.png"
-            size={"x1"}
+            size={{
+                base: "md",
+                md: "xl"
+            }}
         />
     
 

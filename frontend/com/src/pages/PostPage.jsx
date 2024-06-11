@@ -51,6 +51,8 @@ const PostPage = () => {
             </Flex>
 
             <Divider my={4}/>
+
+            
     </>
 };
 

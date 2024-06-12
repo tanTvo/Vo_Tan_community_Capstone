@@ -23,7 +23,7 @@ function App() {
    <Routes >
    <Route path='/' element={user ? <HomePage /> : <Navigate to='/auth' />} />
    <Route path='/auth' element={!user ? <AuthPage /> : <Navigate to='/' />} />
-   <Route path='/update' element={user ? <UpdateProfilePage /> : <Navigate to='/auth' />} />
+   <Route path='/update' element={user ? <UpdateProfilePage /> : <Navigate to='/update' />} />
     <Route path='/:username' element={<UserPage />}/>
     <Route path="/:username/post/:pid" element={<PostPage/>}/>
    </Routes>

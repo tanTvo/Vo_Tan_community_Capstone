@@ -12,6 +12,7 @@ import AuthPage from "./pages/AuthPage"
 import { useRecoilValue } from "recoil"
 import userAtom from "./atoms/userAtom"
 import LogoutButton from "./components/LogoutButton"
+import UpdateProfilePage from "./pages/UpdateProfilePage"
 
 function App() {
   const user = useRecoilValue(userAtom);

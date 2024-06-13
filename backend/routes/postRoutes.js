@@ -1,9 +1,16 @@
-import express from "express"
-import { createPost, getPost, deletePost, likeUnlikePost, replyToPost, getFeedPosts, getUserPosts } from "../controllers/postController.js";
+import express from "express";
+import {
+	createPost,
+	deletePost,
+	getPost,
+	likeUnlikePost,
+	replyToPost,
+	getFeedPosts,
+	getUserPosts,
+} from "../controllers/postController.js";
 import protectRoute from "../middlewares/protectRoute.js";
 
 const router = express.Router();
-
 
 router.get("/feed", protectRoute, getFeedPosts);
 router.get("/:id", getPost);

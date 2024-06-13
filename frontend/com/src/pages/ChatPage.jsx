@@ -116,6 +116,7 @@ const ChatPage = () => {
 	};
 
 	return (
+        <>
 		<Box
 			position={"absolute"}
 			left={"50%"}
@@ -185,6 +186,7 @@ const ChatPage = () => {
 				{selectedConversation._id && <MessageContainer />}
 			</Flex>
 		</Box>
+        </>
 	);
 };
 

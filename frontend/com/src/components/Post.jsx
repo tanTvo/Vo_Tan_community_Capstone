@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Actions from "./Actions";
 import { useEffect, useState } from "react";
 import useShowToast from "../hooks/useShowToast";
-//import { formatDistanceToNow } from "date-fns";
+import { formatDistanceToNow } from "date-fns";
 import { DeleteIcon } from "@chakra-ui/icons";
 import { useRecoilState, useRecoilValue } from "recoil";
 import userAtom from "../atoms/userAtom";
@@ -59,6 +59,7 @@ const Post = ({ post, postedBy }) => {
 
 	if (!user) return null;
 	return (
+        <>
 		<Link to={`/${user.username}/post/${post._id}`}>
 			<Flex gap={3} mb={4} py={5}>
 				<Flex flexDirection={"column"} alignItems={"center"}>
@@ -148,6 +149,7 @@ const Post = ({ post, postedBy }) => {
 				</Flex>
 			</Flex>
 		</Link>
+        </>
 	);
 };
 

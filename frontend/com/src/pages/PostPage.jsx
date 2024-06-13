@@ -5,7 +5,7 @@ import Comment from "../components/Comment";
 import useGetUserProfile from "../hooks/useGetUserProfile";
 import useShowToast from "../hooks/useShowToast";
 import { useNavigate, useParams } from "react-router-dom";
-import { formatDistanceToNow } from "date-fns";
+//import { formatDistanceToNow } from "date-fns";
 import { useRecoilState, useRecoilValue } from "recoil";
 import userAtom from "../atoms/userAtom";
 import { DeleteIcon } from "@chakra-ui/icons";

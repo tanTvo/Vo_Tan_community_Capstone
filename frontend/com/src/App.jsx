@@ -9,7 +9,7 @@ import { useRecoilValue } from "recoil";
 import userAtom from "./atoms/userAtom";
 import UpdateProfilePage from "./pages/UpdateProfilePage";
 import CreatePost from "./components/CreatePost";
-//import ChatPage from "./pages/ChatPage";
+import ChatPage from "./pages/ChatPage";
 //import { SettingsPage } from "./pages/SettingsPage";
 
 function App() {
